@@ -4,7 +4,7 @@
   color: $white;
   letter-spacing: 0.2px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   width: 40px;
   height: 40px;
@@ -26,9 +26,32 @@
   color: $white;
   letter-spacing: 0.2px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   padding: 7px 10px 7px 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: darken($color: white, $amount: 20);
+  }
+}
+
+.btn-notes-logout {
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+
   transition: background-color 0.3s ease;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 

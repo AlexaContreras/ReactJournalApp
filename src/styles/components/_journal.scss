@@ -16,6 +16,8 @@
 .journal__sidebar-navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
 }
 
 .journal__sidebar-navbar h3 {
@@ -35,6 +37,16 @@
   &:hover {
     color: darken($color: white, $amount: 20);
   }
+}
+.journal__new-entry-div {
+  padding: 10px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $primary;
+  width: 50%;
 }
 
 .journal__entries {
