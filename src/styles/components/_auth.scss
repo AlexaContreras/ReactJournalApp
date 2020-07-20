@@ -1,0 +1,151 @@
+.auth__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $primary;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.auth__box-container {
+  background-color: white;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 20px;
+  width: 350px;
+}
+
+.auth__boxes-container-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__title {
+  color: darken($color: $primary, $amount: 20);
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+
+.auth__input {
+  color: $dark-grey;
+  border: 0px;
+  border-bottom: 1px solid $light-grey;
+  font-size: 12px;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 100%;
+  transition: border-bottom 0.3s ease;
+
+  &:focus {
+    border-bottom: 1px solid $primary;
+    outline: none;
+  }
+}
+
+.auth__social-networks {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.auth__alert-error {
+  border-radius: 5px;
+  color: rgb(243, 16, 16);
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.auth__box-sign-up-sign-in {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.auth__box-image-container img {
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.auth__main-loading {
+  display: flex;
+  background-color: $primary;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auth_title-loading {
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+div.auth_container_spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.auth_container_spinner div {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+  margin: 2vw;
+  background-image: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: bounce 1.5s 0.5s linear infinite;
+}
+div.yellow {
+  background-color: $yellow;
+}
+
+.red {
+  background-color: $red;
+  animation-delay: 0.1s;
+}
+
+.blue {
+  background-color: $blue;
+  animation-delay: 0.2s;
+}
+
+.violet {
+  background-color: $violet;
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(0.6);
+    filter: blur(3px);
+  }
+  75% {
+    filter: blur(3px);
+    transform: scale(1.4);
+  }
+}
