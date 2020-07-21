@@ -1,6 +1,6 @@
 # Journal React App
 
-Open [https://alexacontreras.github.io/journalAppReact/]
+Open [https://alexacontreras.github.io/ReactJournalApp/]
 
 ### `Create an account and log in`
 
